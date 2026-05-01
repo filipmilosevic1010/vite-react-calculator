@@ -1,0 +1,126 @@
+.calculator {
+  max-width: 420px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 40px 36px;
+  border-radius: 20px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.calculator h1 {
+  font-size: 32px;
+  margin: 0 0 32px;
+  letter-spacing: -0.5px;
+}
+
+.inputs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 1rem;
+  text-align: center;
+  font-family: var(--mono);
+  transition: border-color 0.2s;
+  min-width: 0;
+}
+
+.inputs input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.inputs input::placeholder {
+  color: var(--text);
+  opacity: 0.6;
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.operations button {
+  padding: 14px 0;
+  font-size: 1.5rem;
+  font-family: var(--mono);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, border-color 0.15s;
+}
+
+.operations button:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.operations button:active {
+  transform: scale(0.95);
+}
+
+.result {
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  margin-bottom: 16px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.result.visible {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+.result .expr {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+.result .value {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--mono);
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.clear-btn:hover {
+  background: var(--border);
+  color: var(--text-h);
+}
