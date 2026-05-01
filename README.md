@@ -4,8 +4,7 @@ Za odabrana dva broja je moguce izvrsiti operacije oduzimanja, sabiranja, mnozen
 
 ## Verse link
 
-[https://vite-react-calculator.vercel.app](https://vite-react-calculator.vercel.app)
-
+[https://vite-react-calculator-steel.vercel.app/](https://vite-react-calculator-steel.vercel.app/)
 ## Pokretanje lokalno
 
 ```bash
